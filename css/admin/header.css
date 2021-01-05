@@ -1,0 +1,117 @@
+a{
+	text-decoration:none;
+	color:#CCC;
+}
+a:hover{
+	color:#FC6;
+	transition: 0.5s;
+}
+.admin-heading-panel{
+	background:black;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+	position: sticky;
+	z-index: 12;
+	top: 0px;
+}
+.admin-heading-introduce{
+	width:220px;
+	height:50px;
+	border-right:1px solid #CCC;
+	float:left;
+}
+.admin-heading-introduce img{
+	width: 35px;
+	height: 30px;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.admin-heading-introduce span{
+	padding-left:7px;
+	font-size:21px;
+	vertical-align: bottom;
+}
+.admin-heading-home{
+	width:186px;
+	height:50px;
+	border-right:1px solid #CCC;
+	float:left;
+}
+.admin-heading-home img{
+	width: 20px;
+	height: 20px;
+	vertical-align: sub;
+	margin-left: 10px;
+}
+.admin-heading-home span{
+	padding-left: 2px;
+	font-size: 18px;
+	color: #CCC;
+}
+.admin-heading-bill{
+	width: 145px;
+	height: 50px;
+	border-right: 1px solid #CCC;
+	float: left;
+}
+.admin-heading-bill img{
+	width: 20px;
+	height: 20px;
+	margin-left: 21px;
+	vertical-align: sub;
+}
+.admin-heading-bill span{
+	padding-left:2px;
+	font-size:18px;
+	color:#CCC;
+}
+li{
+	list-style:none;
+}
+/*--------------------------------------------------------------------------------- Header memu-------------------------------------------------------------------------*/
+.header-bar{
+	float:right;
+	width:210px;
+}
+
+.header-bar span{
+	color:bisque;
+}
+
+.header-nav{
+	width:210px;
+	background:black;
+	position:absolute;
+	z-index:999;
+}
+.fa-align-justify{
+	margin-right: 3px;
+}
+.header-nav a{
+	color:dimgray;
+	display:block;
+	padding-left:15px;
+	border-bottom:1px dashed beige;	
+}
+.header-nav-ul ul li{
+	background:gainsboro;
+}
+.header-nav-ul li img{
+	width: 20px;
+	height: 20px;
+	vertical-align: sub;
+	margin-right: 5px;
+}
+.header-nav-ul ul li i{
+	padding-right:10px;
+}
+.header-nav a:hover{
+	color:#C60;
+}
+.header-nav-ul ul{
+	display:none; /* ẩn đi menu sub */
+}
+.header-nav ul li:hover ul{
+	display:block;
+}

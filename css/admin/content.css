@@ -1,0 +1,1307 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+* {
+  box-sizing: border-box;
+}
+/*end reset*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background:#fff;
+}
+.wrapper{
+	width:1519px;
+	height:1100px;
+}
+#phantrang{
+	padding:10px 0;
+}
+
+#phantrang a .so{
+	color:darkred;
+	width:29px;
+}
+/*-------------------------------------------------------------------------------- Breadcrumb ----------------------------------------------------------------------------*/
+.main-content{
+	width:1288px;
+	height:auto;
+	float:right;
+}
+.main-content-top{
+	background: #f9f9f9;
+	height: 48px;
+	border-bottom: 2px solid #999;
+}
+.main-content-top span{
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0 4px;
+	line-height:48px;
+	color:#428bca;
+}
+.main-content-top span img{
+	width: 12px;
+	height: 12px;
+}
+.main-content-top a{
+	color:#428bca;
+
+}
+.main-content-top a.middle{
+	position: relative;
+}
+.main-content-top a.middle::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0px;
+	left: 0;
+	background-color: #428bca;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.5s ease-in-out;
+}
+.main-content-top a.middle:hover::before{
+	visibility: visible;
+	transform: scaleX(1);
+}
+.main-content-top a:hover{
+	color: #00F;
+
+}
+/*----------------------------------------------------------------------------------------Admin----------------------------------------------------------------------------*/
+.list-admin-content{
+	height:auto;
+	border: 1px solid #fff;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-top:15px;	
+}
+
+.list-admin-content table{
+	width:1265px;
+	height:50px;	
+	border-collapse:collapse;
+}
+
+.list-admin-content table tr td{
+	text-align: center;
+	padding: 25px 12px;
+	border: 1px solid #CCC;
+}
+
+.list-admin-content table tr th{
+	border: 1px solid #CCC;
+	padding:15px;
+}
+.list-admin-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}	
+
+.fix-user-content{
+	height:auto;
+	border: 1px solid #fff;
+	width:900px;
+	background:#fff;
+	margin:auto;
+	padding-top:15px;
+}
+
+.fix-user-content table{
+	width:900px;
+	height:50px;	
+	border-collapse:collapse;
+}
+
+.fix-user-content table tr td{
+	padding:20px 0px 20px 45px;
+	border: 3px solid #CCC;	
+}
+
+.fix-user-content table tr th{
+	border: 1px solid #CCC;
+	padding:15px;
+}
+
+.fix-user-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}	
+
+.fix-user-content table tr td input{
+	border-radius:3px;
+	box-shadow:1px 1px 0px 1px darkolivegreen;
+}
+.fix-user-content table tr td input[type='text']{
+	width: 95%;
+	height: 35px;
+}
+.fix-user-content #sua{
+	border-radius:3px;
+	cursor:pointer;
+	text-align:center;
+	height: 30px;
+	margin-left: 307px;
+}
+
+.fix-user-content #huy{
+	border-radius:3px;
+	cursor:pointer;
+	text-align:center;
+	height: 30px;
+	width:70px;
+	margin-left: 60px;
+}
+/*------------------------------------------------------------------------------------- Customer ------------------------------------------------------------------------*/
+.list-customer-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-top:15px;	
+}
+
+.list-customer-content table{
+	width:1272px;
+	height:50px;	
+	border-collapse:collapse;
+}
+
+.list-customer-content table tr td{
+	text-align:center;
+	padding:25px 6px;
+	border: 1px solid #CCC;
+}
+
+.list-customer-content table tr th{
+	border: 1px solid #CCC;
+	padding:15px;
+}
+
+.list-customer-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}	
+.list-customer-content p:hover{
+	color: darkblue;
+	cursor: pointer;
+}
+/*----------------------------------------------------------------------------------- Product Size -----------------------------------------------------------------------*/
+.list-size-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1120px;
+	margin: auto;
+}
+.list-size-heading #buttons{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-size-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-size-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-size-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-left: 75px;	
+}
+.list-size-content table{
+	width:1120px;
+	height:50px;	
+	border-collapse:collapse;
+}
+.list-size-content table tr td{
+	text-align:center;
+	padding:10px;
+	border: 1px solid #CCC;
+}
+.list-size-content table tr th{
+	border: 1px solid #CCC;
+	padding:20px;
+}
+.list-size-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+
+.add-size-content{
+	height:auto;
+	width:1287px;
+}
+.add-size-content table{
+	width:1235px;
+	margin: auto;
+	margin-top: 15px; 
+}
+.add-size-content table tr td{
+	padding:13px;
+}
+.add-size-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-size-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-size-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+}
+.add-size-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+/*------------------------------------------------------------------------------- Product brand -------------------------------------------------------------------------*/
+.list-brand-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1120px;
+	margin: auto;
+}
+.list-brand-heading #buttons{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-brand-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-brand-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-brand-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-left: 75px;	
+}
+.list-brand-content table{
+	width:1120px;
+	height:50px;	
+	border-collapse:collapse;
+}
+.list-brand-content table tr td{
+	text-align:center;
+	padding:10px;
+	border: 1px solid #CCC;
+}
+.list-brand-content table tr th{
+	border: 1px solid #CCC;
+	padding:20px;
+}
+.list-brand-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+
+.add-brand-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.add-brand-content table{
+	width:1235px;
+	margin: auto;
+}
+.add-brand-content table tr td{
+	padding:13px;
+}
+.add-brand-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-brand-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-brand-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+}
+.add-brand-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+
+.fix-brand-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.fix-brand-content table{
+	width:1235px;
+	margin: auto;
+}
+.fix-brand-content table tr td{
+	padding:13px;
+}
+.fix-brand-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.fix-brand-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.fix-brand-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.fix-brand-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-brand-content table tr td input[type=reset]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+.fix-brand-content table tr td input[type=reset]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-brand-content .color{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+/*------------------------------------------------------------------------------- Product type --------------------------------------------------------------------------*/
+.list-type-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1120px;
+	margin: auto;
+}
+.list-type-heading #buttons{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-type-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-type-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-type-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-left: 75px;	
+}
+.list-type-content table{
+	width:1120px;
+	height:50px;	
+	border-collapse:collapse;
+}
+.list-type-content table tr td{
+	text-align:center;
+	padding:10px;
+	border: 1px solid #CCC;
+}
+.list-type-content table tr th{
+	border: 1px solid #CCC;
+	padding:20px;
+}
+.list-type-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+
+.add-type-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.add-type-content table{
+	width:1235px;
+	margin: auto;
+}
+.add-type-content table tr td{
+	padding:13px;
+}
+.add-type-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-type-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-type-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+}
+.add-type-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+
+.fix-type-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.fix-type-content table{
+	width:1235px;
+	margin: auto;
+}
+.fix-type-content table tr td{
+	padding:13px;
+}
+.fix-type-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.fix-type-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.fix-type-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.fix-type-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-type-content table tr td input[type=reset]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+.fix-type-content table tr td input[type=reset]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-type-content .color{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+/*------------------------------------------------------------------------------- Category ------------------------------------------------------------------------------*/
+.list-category-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1120px;
+	margin: auto;
+}
+.list-category-heading #buttons{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-category-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-category-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-category-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-left: 75px;	
+}
+.list-category-content table{
+	width:1120px;
+	height:50px;	
+	border-collapse:collapse;
+}
+.list-category-content table tr td{
+	text-align:center;
+	padding:10px;
+	border: 1px solid #CCC;
+}
+.list-category-content table tr th{
+	border: 1px solid #CCC;
+	padding:20px;
+}
+.list-category-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+
+.add-category-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.add-category-content table{
+	width:1235px;
+	margin: auto;
+}
+.add-category-content table tr td{
+	padding:13px;
+}
+.add-category-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-category-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-category-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+}
+.add-category-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+
+.fix-category-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.fix-category-content table{
+	width:1235px;
+	margin: auto;
+}
+.fix-category-content table tr td{
+	padding:13px;
+}
+.fix-category-content table tr td input[type="text"]{
+	width:1025px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.fix-category-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.fix-category-content table tr td input[type=submit]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.fix-category-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-category-content table tr td input[type=reset]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+.fix-category-content table tr td input[type=reset]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-category-content .color{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+/*--------------------------------------------------------------------------------- Bill --------------------------------------------------------------------------------*/
+.list-bill-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-top:15px;	
+}
+
+.list-bill-content table{
+	width:1272px;
+	height:50px;	
+	border-collapse:collapse;
+}
+
+.list-bill-content table tr td{
+	text-align:center;
+	padding:25px 6px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+}
+
+.list-bill-content table tr th{
+	border: 1px solid #CCC;
+	padding:5px;
+	vertical-align: middle;
+}
+
+.list-bill-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}	
+.list-bill-content p:hover{
+	color: darkblue;
+	cursor: pointer;
+}
+/*------------------------------------------------------------------------------------ Blog ------------------------------------------------------------------------------*/
+#ndn{
+	width: 400px;
+	height: 150px;
+	max-width: 1197px;
+	border-radius: 5px;
+	min-width: 500px;
+	max-height: 150px;
+	min-height: 50px;	
+}
+#ndn:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.list-blog-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1270px;
+	margin: auto;
+}
+.list-blog-heading #buttons{
+	font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-blog-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-blog-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-blog-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;	
+}
+.list-blog-content table{
+	width:1272px;
+	height:auto:;	
+	border-collapse:collapse;
+}
+.list-blog-content img{
+	width: 310px;
+	height: 70px;
+	margin: 0 1px;
+}
+.list-blog-content table tr td{
+	text-align: center;
+	padding: 5px 25px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+}
+.list-blog-content table tr th{
+	border: 1px solid #CCC;
+	padding:14px;
+	vertical-align: middle;
+}
+.list-blog-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+.add-blog-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.add-blog-content table{
+	width:1237px;
+	padding-left: 25px;
+	margin: auto;
+}
+.add-blog-content table tr td{
+	padding:2px 2px 15px 2px;
+}
+.add-blog-content table tr td input[type="text"]{
+	width:1230px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-blog-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-blog-content .color{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display: block;
+	margin-bottom: 2px;
+}
+.add-blog-content table tr td input[type=submit]{
+	width:80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor:pointer;
+	background:#3178b9;
+	color:#FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.add-blog-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+
+
+.fix-blog-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.fix-blog-content table{
+	width:1237px;
+	padding-left: 25px;
+	margin: auto;
+}
+.fix-blog-content table tr td{
+	padding:2px 2px 15px 2px;
+}
+.fix-blog-content table tr td input[type="text"]{
+	width:1230px;
+	height:35px;
+	border-radius:5px;
+}
+.fix-blog-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.fix-blog-content .color{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display: block;
+	margin-bottom: 2px;
+}
+.fix-blog-content table tr td input[type=submit]{
+	width:80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor:pointer;
+	background:#3178b9;
+	color:#FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+.fix-blog-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-blog-content table tr td input[type=reset]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+.fix-blog-content table tr td input[type=reset]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+/*------------------------------------------------------------------------------------ Slide ------------------------------------------------------------------------------*/
+.list-slide-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1270px;
+	margin: auto;
+}
+.list-slide-heading #buttons{
+	font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-slide-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-slide-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-slide-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;	
+}
+.list-slide-content table{
+	width:1272px;
+	height:auto:;	
+	border-collapse:collapse;
+}
+.list-slide-content img{
+	width: 200px;
+	height: 70px;
+	margin: 0 1px;
+}
+.list-slide-content table tr td{
+	text-align: center;
+	padding: 5px 25px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+}
+.list-slide-content table tr th{
+	border: 1px solid #CCC;
+	padding:14px;
+	vertical-align: middle;
+}
+.list-slide-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+.add-slide-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.add-slide-content table{
+	width:1237px;
+	padding-left: 25px;
+	margin: auto;
+}
+.add-slide-content table tr td{
+	padding:2px 2px 15px 2px;
+}
+.add-slide-content table tr td input[type="text"]{
+	width:1230px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-slide-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-slide-content .color{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display: block;
+	margin-bottom: 2px;
+}
+.add-slide-content table tr td input[type=submit]{
+	width:80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor:pointer;
+	background:#3178b9;
+	color:#FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.add-slide-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+
+
+.fix-slide-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.fix-slide-content table{
+	width:1237px;
+	padding-left: 25px;
+	margin: auto;
+}
+.fix-slide-content table tr td{
+	padding:2px 2px 15px 2px;
+}
+.fix-slide-content table tr td input[type="text"]{
+	width:1230px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.fix-slide-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.fix-slide-content .color{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display: block;
+	margin-bottom: 2px;
+}
+.fix-slide-content table tr td input[type=submit]{
+	width:80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor:pointer;
+	background:#3178b9;
+	color:#FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+.fix-slide-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-slide-content table tr td input[type=reset]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+.fix-slide-content table tr td input[type=reset]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+/*------------------------------------------------------------------------------------ Product details ------------------------------------------------------------------------------*/
+.list-product_details-heading{
+	text-align:center;
+	height:70px;
+	background:#fff;
+	width:1270px;
+	margin: auto;
+}
+.list-product_details-heading #buttons{
+	font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    float: left;
+}
+.list-product_details-heading #buttons a{
+    color:#FFF;
+    padding: 10px;
+    background:#428bca;
+	border-radius:3px;
+}
+.list-product_details-heading #buttons i{
+	padding-right:5px;
+	font-size:14px;
+}
+.list-product_details-content{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;	
+}
+.list-product_details-content table{
+	width:1272px;
+	height:auto:;	
+	border-collapse:collapse;
+}
+.list-product_details-content img{
+	width: 500px;
+	height: 130px;
+	margin: 0 0 11px 0;
+}
+.list-product_details-content table tr td{
+	text-align: center;
+	padding: 0 18px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+}
+.list-product_details-content table tr th{
+	border: 1px solid #CCC;
+	padding:5px;
+	vertical-align: middle;
+}
+.list-product_details-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}
+
+.add-product_details-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.add-product_details-content table{
+	width:1237px;
+	padding-left: 25px;
+	margin: auto;
+}
+.add-product_details-content table tr td{
+	padding:2px 2px 15px 2px;
+}
+.add-product_details-content table tr td input[type="text"]{
+	width:1230px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.add-product_details-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.add-product_details-content .color{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display: block;
+	margin-bottom: 2px;
+}
+.add-product_details-content table tr td input[type=submit]{
+	width:80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor:pointer;
+	background:#3178b9;
+	color:#FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.add-product_details-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+
+
+.fix-product_details-content{
+	height:auto;
+	width:1287px;
+	padding-top: 15px;
+}
+.fix-product_details-content table{
+	width:1237px;
+	padding-left: 25px;
+	margin: auto;
+}
+.fix-product_details-content table tr td{
+	padding:2px 2px 15px 2px;
+}
+.fix-product_details-content table tr td input[type="text"]{
+	width:1230px;
+	height:35px;
+	border-radius:5px;
+	outline: none;
+}
+.fix-product_details-content table tr td input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 0px currentColor;
+}
+.fix-product_details-content .color{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	display: block;
+	margin-bottom: 2px;
+}
+.fix-product_details-content table tr td input[type=submit]{
+	width:80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor:pointer;
+	background:#3178b9;
+	color:#FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+.fix-product_details-content table tr td input[type=submit]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+.fix-product_details-content table tr td input[type=reset]{
+	width: 80px;
+	box-shadow: 1px 1px 1px 0px aquamarine;
+	cursor: pointer;
+	background: #3178b9;
+	color: #FFF;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+.fix-product_details-content table tr td input[type=reset]:hover{
+	box-shadow:0px 2px 2px 0px #000;
+}
+/*------------------------------------------------------------------------------------Bill_product  ------------------------------------------------------------------------------*/
+.list-bill_details-content{
+	height:auto;
+	border: 1px solid #fff;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-top:20px;	
+}
+
+.list-bill_details-content table{
+	width:1272px;
+	height:50px;	
+	border-collapse:collapse;
+}
+
+.list-bill_details-content table tr td{
+	text-align:center;
+	padding:20px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+}
+
+.list-bill_details-content table tr th{
+	border: 1px solid #CCC;
+	padding:15px;
+}
+
+.list-bill_details-content table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}	
+
+#Total{
+	padding-right:165px;
+	text-align:right;
+	font-size:25px;
+}
+/*------------------------------------------------------------------------------------Bill_product_home ------------------------------------------------------------------------------*/
+.list-bill-product-home{
+	height:auto;
+	width:1270px;
+	background:#fff;
+	margin:auto;
+	padding-top:15px;	
+}
+
+.list-bill-product-home table{
+	width:1272px;
+	height:50px;	
+	border-collapse:collapse;
+}
+
+.list-bill-product-home table tr td{
+	text-align:center;
+	padding:25px 6px;
+	border: 1px solid #CCC;
+	vertical-align: middle;
+}
+
+.list-bill-product-home table tr th{
+	border: 1px solid #CCC;
+	padding: 25px 5px;
+	vertical-align: middle;
+}
+
+.list-bill-product-home table tr td a{
+	color:darkblue;
+	text-decoration:none;
+}	
+.list-bill-product-home p:hover{
+	color: darkblue;
+	cursor: pointer;
+}

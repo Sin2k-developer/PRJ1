@@ -1,0 +1,53 @@
+.menu-bar{
+	width:220px;
+	height:1048px;
+	background:#CCC;
+	float:left;
+	box-shadow: -9px 13px 9px 11px darkgray;
+	position:fixed;
+}
+.main-nav{
+	width:220px;
+	background:#f9f9f9;
+}
+.main-nav a{
+	color:#000;
+	display:block;
+	padding:20px 0px 10px 15px;
+	border-bottom:2px solid #999;
+}
+.main-nav-ul ul li{
+	background:#fff;
+	transition:5s;
+	transition-duration:3s;
+}
+.main-nav a:hover{
+	color:#F00;
+}
+.main-nav-ul ul{
+	display:none; /* ẩn đi menu sub */
+}
+.main-nav ul li:hover ul{
+	display:block;
+}
+
+/*Icon*/
+.main-nav-ul .sub-icon:after{
+	content:'\203A';
+	float:right;
+	margin-right:10px;
+	transform:rotate(90deg); /* Thuộc tính chuyển đổi 2D & 3D */
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+}
+/*-- Before and after là 1 ptu giả dùng để chèn 1 cái j đó trc hoặc sau nội dung của 1 ptu -- */
+.main-nav ul li:hover .sub-icon:after{ 
+	content:'\2039';
+}
+.main-nav-ul ul a:before{
+	content:'\203A';
+	margin-right:5px;
+}
+i{
+	padding-right:4px;
+}
